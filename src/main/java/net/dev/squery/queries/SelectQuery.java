@@ -13,7 +13,7 @@ public class SelectQuery<T> extends QueryBuilder<T> {
         return null;
     }
 
-    public SelectQuery<T> fromTable(String table) {
+    public SelectQuery<T> forTable(String table) {
         this.table = table;
         return this;
     }

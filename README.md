@@ -37,7 +37,7 @@ public class Main {
         // Create Query
         String createQuery = QueryManager.createQuery()
             .withEntity(new User("john","doe", 34, "johnd@gmail.com","Software Engineer"))
-            .fromTable("users")
+            .forTable("users")
             .build();
         
             try (PreparedStatement preparedStatement = connection.prepareStatement(createQuery)) {

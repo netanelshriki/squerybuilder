@@ -12,7 +12,7 @@ public class DeleteQuery<T> extends QueryBuilder<T> {
         return null;
     }
 
-    public DeleteQuery<T> fromTable(String table) {
+    public DeleteQuery<T> forTable(String table) {
         this.table = table;
         return this;
     }

@@ -16,7 +16,7 @@ public abstract class QueryBuilder<T> {
 
     public abstract QueryBuilder<T> withEntity(T entity);
 
-    public abstract QueryBuilder<T> fromTable(String table);
+    public abstract QueryBuilder<T> forTable(String table);
 
     public abstract QueryBuilder<T> forId(int id);
 

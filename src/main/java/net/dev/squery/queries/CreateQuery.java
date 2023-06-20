@@ -13,7 +13,7 @@ public class CreateQuery<T> extends QueryBuilder<T> {
         return this;
     }
 
-    public CreateQuery<T> fromTable(String table) {
+    public CreateQuery<T> forTable(String table) {
         query.append("INSERT INTO ").append(table).append(" ");
         this.table = table;
         return this;

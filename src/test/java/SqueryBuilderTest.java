@@ -1,6 +1,5 @@
 import models.User;
 import net.dev.squery.builders.QueryManager;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,7 +11,7 @@ public class SqueryBuilderTest {
 
         String createQuery = QueryManager.createQuery()
                 .withEntity(new User("joe", 34, "joe@gmail.com"))
-                .fromTable("users")
+                .forTable("users")
                 .build();
 
         assertNotNull(createQuery);

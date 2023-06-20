@@ -10,7 +10,7 @@ public class UpdateQuery<T> extends QueryBuilder<T> {
     private StringBuilder conditionBuilder;
     private boolean hasCondition;
 
-    public UpdateQuery<T> fromTable(String table) {
+    public UpdateQuery<T> forTable(String table) {
         this.table = table;
         return this;
     }
