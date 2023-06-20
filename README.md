@@ -55,7 +55,7 @@ a quick reminder to how to write sql query with jdbc 😄:
 public class Main {
     public static void main(String[] args) {
         // Create Query
-        User user = new User("john","doe", 34, "johnd@gmail.com","Software Engineer");
+        User user = new User("john", "doe", 34, "johnd@gmail.com", "Software Engineer");
         String createQuery = "INSERT INTO users (name, age, email) VALUES (?, ?, ?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(createQuery)) {
             preparedStatement.setString(1, user.getName());
@@ -63,8 +63,8 @@ public class Main {
             preparedStatement.setInt(2, user.getAge());
             preparedStatement.setString(3, user.getEmail());
             preparedStatement.setString(3, user.getOccupation());
-            int rowsAffected = preparedStatement.execute();
-            System.out.println("Create Query: Rows affected - " + rowsAffected);
+            preparedStatement.execute();
+           
         }
 
     }
