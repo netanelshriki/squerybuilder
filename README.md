@@ -63,7 +63,7 @@ public class Main {
             preparedStatement.setInt(2, user.getAge());
             preparedStatement.setString(3, user.getEmail());
             preparedStatement.setString(3, user.getOccupation());
-            int rowsAffected = preparedStatement.executeUpdate();
+            int rowsAffected = preparedStatement.execute();
             System.out.println("Create Query: Rows affected - " + rowsAffected);
         }
 
