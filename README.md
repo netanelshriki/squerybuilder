@@ -21,7 +21,7 @@ To start using SQueryBuilder in your Java project, you can include the following
 ```
 
 or by following these steps:
-1. Download the latest release of SQueryBuilder from the [releases](https://github.com/example/squerybuilder/releases) page.
+1. Download the latest release of SQueryBuilder from the [releases](https://github.com/netanelshriki/squerybuilder/releases) page.
 2. Add the SQueryBuilder JAR file to your project's dependencies.
 
 ## Usage
