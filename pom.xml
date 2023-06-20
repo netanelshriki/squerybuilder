@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.dev</groupId>
-    <artifactId>SqueryBuilder</artifactId>
+    <artifactId>squerybuilder</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -22,4 +22,19 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+<repository>
+    <id>github</id>
+    <name>GitHub netanelshriki Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/netanelshriki/squerybuilder</url>
+</repository>
+</distributionManagement>
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+</plugins>
+</build>
 </project>
