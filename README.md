@@ -56,13 +56,13 @@ public class Main {
     public static void main(String[] args) {
         // Create Query
         User user = new User("john", "doe", 34, "johnd@gmail.com", "Software Engineer");
-        String createQuery = "INSERT INTO users (name, age, email) VALUES (?, ?, ?)";
+        String createQuery = "INSERT INTO users (name, lastName, age, email, occupation) VALUES (?, ?, ? ,? ,?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(createQuery)) {
             preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(1, user.getLastName());
-            preparedStatement.setInt(2, user.getAge());
-            preparedStatement.setString(3, user.getEmail());
-            preparedStatement.setString(3, user.getOccupation());
+            preparedStatement.setString(2, user.getLastName());
+            preparedStatement.setInt(3, user.getAge());
+            preparedStatement.setString(4, user.getEmail());
+            preparedStatement.setString(5, user.getOccupation());
             preparedStatement.execute();
            
         }
